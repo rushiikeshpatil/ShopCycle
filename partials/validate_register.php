@@ -4,6 +4,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $name = $_POST["name"];
     $email = $_POST["email"];
+    $phone = $_POST["phone"];
+    $address = $_POST["address"];
     $password = $_POST["password"];
     $cpassword = $_POST["cpassword"];
 
@@ -12,15 +14,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         echo "<script>window.open('../register.html','_self')</script>";
 
     }
-    
+
     $sql="SELECT u_email FROM `user` WHERE u_email='$email'";
     
     $result = mysqli_query($conn, $sql);
     $num = mysqli_num_rows($result);
 
-    if($num==0)
+    if($num==0 && $password==$cpassword)
     {
-        $sql="INSERT INTO `user` (`u_name`, `u_email`, `u_password`) VALUES ('$name', '$email', '$password')";
+        $sql="INSERT INTO `user` (`u_name`, `u_email`, `u_phone`, `u_address`,`u_password`) VALUES ('$name', '$email', '$phone','$address','$password')";
         $result = mysqli_query($conn, $sql);
         if($result){
             echo "<script>alert('User Registered Successfully!')</script>";

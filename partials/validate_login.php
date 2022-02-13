@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($num==1)
     {
         echo "<script>alert('You logged in successfully!')</script>";
-            echo "<script>window.open('../index.html','_self')</script>";
+        echo "<script>window.open('../index.html','_self')</script>";
     }
     else{
         echo "<script>alert('You logged in unsuccessfully!')</script>";

@@ -21,7 +21,7 @@ if (isset($_POST['upload'])) {
     // Now let's move the uploaded image into the folder: image
     if (move_uploaded_file($tempname, $folder)) {
         echo "<script>alert('Uploaded Successfully!')</script>";
-        echo "<script>window.open('../upload_equiments.html','_self')</script>";
+        echo "<script>window.open('../upload_equipments.html','_self')</script>";
     } else {
         echo "<script>alert('Uploaded Unsuccessful!')</script>";
         echo "<script>window.open('../contact.html','_self')</script>";

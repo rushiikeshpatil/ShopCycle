@@ -66,8 +66,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Material</h5>
-                    <h1 class="mb-5">Sell Material</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Equipments</h5>
+                    <h1 class="mb-5">Sell Equipments</h1>
                 </div>
 
                 <div class="row justify-content-md-center">
@@ -78,30 +78,30 @@
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <br>
-                                            <h4 for="Label">Material Information</h4>
+                                            <h4 for="Label">Equipments Information</h4>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-                                            <label for="Name"> Material Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+                                            <label for="Name"> Equipments Name</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a Description here" id="description" style="height: 75px" name="desc"></textarea>
+                                            <textarea class="form-control" placeholder="Leave a Description here" id="description" style="height: 75px" name="desc"  required></textarea>
                                             <label for="Desc">Description</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="number" class="form-control" id="price" placeholder="Price" name="price">
+                                            <input type="number" class="form-control" id="price" placeholder="Price" name="price" required>
                                             <label for="Price">Price</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="file" class="form-control" id="file" placeholder="File" name="uploadfile">
+                                            <input type="file" class="form-control" id="file" placeholder="File" name="uploadfile" required>
                                             <label for="File">File</label>
                                         </div>
                                     </div>
@@ -113,14 +113,14 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="phone" class="form-control" id="phone" placeholder="Phone" name="phone">
+                                            <input type="phone" class="form-control" id="phone" placeholder="Phone" name="phone" pattern="[7-9]{1}[0-9]{9}" maxlength="10" required>
                                             <label for="Phone">Phone</label>
                                         </div>
                                     </div>
                                     
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Enter Pickup Address" id="address" style="height: 100px" name="address"></textarea>
+                                            <textarea class="form-control" placeholder="Enter Pickup Address" id="address" style="height: 100px" name="address" required></textarea>
                                             <label for="Address">Pickup Address</label>
                                         </div>
                                     </div>

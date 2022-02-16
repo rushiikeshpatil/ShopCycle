@@ -67,7 +67,7 @@ $files = mysqli_fetch_all($result, MYSQLI_ASSOC);
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal"> Buy Materials </h5>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal"> Buy Equipments </h5>
                     <h1 class="mb-5">Buy</h1>
                 </div>
                 <!-- From DB to Front End starts --> 
